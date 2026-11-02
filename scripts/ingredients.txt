@@ -1,0 +1,428 @@
+# id|name|aliases (comma separated)|SR Legacy description regex (re.match, shortest wins)|Foundation description (exact, optional)
+# Dairy and eggs
+egg|Egg, whole, raw|egg,eggs,large egg,whole egg,large eggs|Egg, whole, raw, fresh$|Eggs, Grade A, Large, egg whole
+egg-white|Egg white, raw|egg white,egg whites|Egg, white, raw, fresh$|Eggs, Grade A, Large, egg white
+egg-yolk|Egg yolk, raw|egg yolk,egg yolks,yolks|Egg, yolk, raw, fresh$|Eggs, Grade A, Large, egg yolk
+butter-salted|Butter, salted|butter,salted butter|Butter, salted$|Butter, stick, salted
+butter-unsalted|Butter, unsalted|unsalted butter,sweet butter|Butter, without salt$|Butter, stick, unsalted
+ghee|Ghee (butter oil, anhydrous)|clarified butter,butter oil|Butter oil, anhydrous$|
+milk-whole|Milk, whole|milk,whole milk|Milk, whole, 3.25% milkfat, with added vitamin D$|Milk, whole, 3.25% milkfat, with added vitamin D
+milk-2|Milk, 2% reduced fat|2% milk,reduced fat milk|Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D$|Milk, reduced fat, fluid, 2% milkfat, with added vitamin A and vitamin D
+milk-1|Milk, 1% lowfat|1% milk,lowfat milk,low fat milk|Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D$|Milk, lowfat, fluid, 1% milkfat, with added vitamin A and vitamin D
+milk-skim|Milk, nonfat (skim)|skim milk,nonfat milk,fat free milk|Milk, nonfat, fluid, with added vitamin A and vitamin D \(fat free or skim\)$|Milk, nonfat, fluid, with added vitamin A and vitamin D (fat free or skim)
+buttermilk|Buttermilk, lowfat|buttermilk|Milk, buttermilk, fluid, cultured, lowfat$|Buttermilk, low fat
+heavy-cream|Cream, heavy whipping|heavy cream,whipping cream,double cream,heavy whipping cream|Cream, fluid, heavy whipping$|Cream, heavy
+light-cream|Cream, light|light cream,coffee cream,single cream,table cream|Cream, fluid, light \(coffee cream or table cream\)$|
+half-and-half|Half and half|half & half,half-and-half|Cream, fluid, half and half$|
+sour-cream|Sour cream|sour cream|Cream, sour, cultured$|Cream, sour, full fat
+cream-cheese|Cream cheese|cream cheese,philadelphia|Cheese, cream$|Cream cheese, full fat, block
+cheddar|Cheddar cheese|cheddar,cheddar cheese,sharp cheddar,shredded cheddar|Cheese, cheddar$|Cheese, cheddar
+mozzarella|Mozzarella, whole milk|mozzarella,fresh mozzarella|Cheese, mozzarella, whole milk$|
+mozzarella-part-skim|Mozzarella, part skim, low moisture|part skim mozzarella,shredded mozzarella,low moisture mozzarella|Cheese, mozzarella, low moisture, part-skim$|Cheese, mozzarella, low moisture, part-skim
+parmesan|Parmesan, grated|parmesan,parmigiano,parmigiano reggiano,grated parmesan|Cheese, parmesan, grated$|Cheese, parmesan, grated
+parmesan-hard|Parmesan, hard block|parmesan wedge,shaved parmesan|Cheese, parmesan, hard$|
+swiss|Swiss cheese|swiss,swiss cheese,emmental|Cheese, swiss$|Cheese, swiss
+feta|Feta cheese|feta,feta cheese,crumbled feta|Cheese, feta$|Cheese, feta, whole milk, crumbled
+ricotta|Ricotta, whole milk|ricotta,ricotta cheese|Cheese, ricotta, whole milk$|Cheese, ricotta, whole milk
+ricotta-part-skim|Ricotta, part skim|part skim ricotta|Cheese, ricotta, part skim milk$|
+cottage-cheese|Cottage cheese, creamed|cottage cheese|Cheese, cottage, creamed, large or small curd$|Cottage cheese, full fat, large or small curd
+goat-cheese|Goat cheese, soft|goat cheese,chevre|Cheese, goat, soft type$|
+blue-cheese|Blue cheese|blue cheese,gorgonzola,roquefort|Cheese, blue$|
+monterey-jack|Monterey Jack cheese|monterey jack,jack cheese,pepper jack|Cheese, monterey$|Cheese, monterey jack, solid
+provolone|Provolone cheese|provolone|Cheese, provolone$|Cheese, provolone, sliced
+gruyere|Gruyere cheese|gruyere|Cheese, gruyere$|
+brie|Brie cheese|brie|Cheese, brie$|
+american-cheese|American cheese, process|american cheese,cheese slices|Cheese, pasteurized process, American, fortified with vitamin D$|
+queso-fresco|Queso fresco|queso fresco|Cheese, fresh, queso fresco$|Cheese, queso fresco, solid
+yogurt-plain-whole|Yogurt, plain, whole milk|plain yogurt,yogurt,whole milk yogurt|Yogurt, plain, whole milk$|Yogurt, plain, whole milk
+yogurt-plain-lowfat|Yogurt, plain, low fat|low fat yogurt,lowfat yogurt|Yogurt, plain, low fat$|
+greek-yogurt-nonfat|Greek yogurt, plain, nonfat|greek yogurt,nonfat greek yogurt,0% greek yogurt|Yogurt, Greek, plain, nonfat$|Yogurt, Greek, plain, nonfat
+greek-yogurt-whole|Greek yogurt, plain, whole milk|full fat greek yogurt,whole milk greek yogurt|Yogurt, Greek, plain, whole milk$|Yogurt, Greek, plain, whole milk
+evaporated-milk|Evaporated milk|evaporated milk|Milk, canned, evaporated, with added vitamin D and without added vitamin A$|
+condensed-milk|Sweetened condensed milk|sweetened condensed milk,condensed milk|Milk, canned, condensed, sweetened$|Sweetened condensed milk
+dry-milk|Nonfat dry milk powder|milk powder,powdered milk,dry milk|Milk, dry, nonfat, regular, without added vitamin A and vitamin D$|
+# Fats and oils
+olive-oil|Olive oil|olive oil,extra virgin olive oil,evoo,extra-virgin olive oil|Oil, olive, salad or cooking$|Oil, olive, extra virgin
+vegetable-oil|Vegetable oil (soybean)|vegetable oil,soybean oil,cooking oil|Oil, soybean, salad or cooking$|Oil, soybean
+canola-oil|Canola oil|canola oil,rapeseed oil|Oil, canola$|Oil, canola
+coconut-oil|Coconut oil|coconut oil|Oil, coconut$|Oil, coconut
+sesame-oil|Sesame oil|sesame oil,toasted sesame oil|Oil, sesame, salad or cooking$|
+peanut-oil|Peanut oil|peanut oil,groundnut oil|Oil, peanut, salad or cooking$|Oil, peanut
+sunflower-oil|Sunflower oil|sunflower oil|Oil, sunflower, linoleic, \(approx. 65%\)$|Oil, sunflower
+corn-oil|Corn oil|corn oil|Oil, corn, industrial and retail, all purpose salad or cooking$|Oil, corn
+avocado-oil|Avocado oil|avocado oil|Oil, avocado$|
+shortening|Vegetable shortening|shortening,crisco,vegetable shortening|Shortening, household, soybean \(partially hydrogenated\)-cottonseed \(partially hydrogenated\)$|
+lard|Lard|lard|Lard$|
+margarine|Margarine, stick|margarine|Margarine, regular, 80% fat, composite, stick, with salt$|
+mayonnaise|Mayonnaise|mayonnaise,mayo|Salad dressing, mayonnaise, regular$|Mayonnaise, Regular
+# Sweeteners and sweets
+sugar|Sugar, granulated|sugar,white sugar,granulated sugar,caster sugar,superfine sugar|Sugars, granulated$|Sugars, granulated
+brown-sugar|Brown sugar|brown sugar,light brown sugar,dark brown sugar,packed brown sugar|Sugars, brown$|
+powdered-sugar|Powdered sugar|powdered sugar,confectioners sugar,icing sugar,confectioners' sugar|Sugars, powdered$|
+honey|Honey|honey|Honey$|
+maple-syrup|Maple syrup|maple syrup|Syrups, maple$|
+corn-syrup|Corn syrup, light|corn syrup,light corn syrup,karo|Syrups, corn, light$|
+molasses|Molasses|molasses,treacle|Molasses$|
+agave|Agave syrup|agave,agave nectar,agave syrup|Sweetener, syrup, agave$|
+chocolate-chips|Semisweet chocolate chips|chocolate chips,semisweet chocolate,semi-sweet chocolate chips,chocolate morsels|Candies, semisweet chocolate$|
+dark-chocolate|Dark chocolate, 70-85% cacao|dark chocolate,bittersweet chocolate|Chocolate, dark, 70-85% cacao solids$|
+baking-chocolate|Unsweetened baking chocolate|unsweetened chocolate,baking chocolate|Baking chocolate, unsweetened, squares$|
+milk-chocolate|Milk chocolate|milk chocolate|Candies, milk chocolate$|
+white-chocolate|White chocolate|white chocolate,white chocolate chips|Candies, white chocolate$|
+cocoa-powder|Cocoa powder, unsweetened|cocoa,cocoa powder,unsweetened cocoa|Cocoa, dry powder, unsweetened$|
+jam|Jam or preserves|jam,jelly,preserves,strawberry jam|Jams and preserves$|
+marshmallows|Marshmallows|marshmallows,mini marshmallows|Candies, marshmallows$|
+gelatin|Gelatin, unflavored, dry|gelatin,unflavored gelatin|Gelatins, dry powder, unsweetened$|
+# Flours, grains, pasta, bread, leavening
+flour-ap|Flour, all-purpose|flour,all-purpose flour,all purpose flour,plain flour,ap flour,white flour|Wheat flour, white, all-purpose, enriched, bleached$|Flour, wheat, all-purpose, enriched, bleached
+flour-ap-unbleached|Flour, all-purpose, unbleached|unbleached flour,unbleached all-purpose flour|Wheat flour, white, all-purpose, enriched, unbleached$|Flour, wheat, all-purpose, enriched, unbleached
+flour-bread|Bread flour|bread flour,strong flour|Wheat flour, white, bread, enriched$|Flour, bread, white, enriched, unbleached
+flour-cake|Cake flour|cake flour|Wheat flour, white, cake, enriched$|
+flour-whole-wheat|Whole wheat flour|whole wheat flour,wholemeal flour,whole-wheat flour|Wheat flour, whole-grain$|Flour, whole wheat, unenriched
+flour-self-rising|Self-rising flour|self-rising flour,self raising flour|Wheat flour, white, all-purpose, self-rising, enriched$|
+flour-almond|Almond flour|almond flour,almond meal|~Nuts, almonds, blanched$|Flour, almond
+flour-coconut|Coconut flour|coconut flour|~Nuts, coconut meat, dried \(desiccated\), not sweetened$|Flour, coconut
+flour-rice|Rice flour, white|rice flour|Rice flour, white, unenriched$|Flour, rice, white, unenriched
+flour-rye|Rye flour|rye flour|Rye flour, medium$|Flour, rye
+flour-oat|Oat flour|oat flour|Oat flour, partially debranned$|Flour, oat, whole grain
+masa-harina|Masa harina (corn flour)|masa harina,masa,corn flour|Corn flour, masa, enriched, white$|Corn flour, masa harina, white or yellow, dry, raw
+cornmeal|Cornmeal, yellow|cornmeal,polenta,yellow cornmeal|Cornmeal, whole-grain, yellow$|
+cornstarch|Cornstarch|cornstarch,corn starch,cornflour|Cornstarch$|
+semolina|Semolina|semolina|Semolina, enriched$|Flour, semolina, fine
+oats|Rolled oats|oats,rolled oats,old fashioned oats,quick oats,oatmeal|Cereals, oats, regular and quick, not fortified, dry$|Oats, whole grain, rolled, old fashioned
+oats-steel-cut|Steel cut oats|steel cut oats|~Cereals, oats, regular and quick, not fortified, dry$|Oats, whole grain, steel cut
+rice-white|White rice, long grain, uncooked|rice,white rice,long grain rice,basmati rice,jasmine rice,uncooked rice|Rice, white, long-grain, regular, raw, enriched$|
+rice-white-cooked|White rice, cooked|cooked rice,cooked white rice|Rice, white, long-grain, regular, enriched, cooked$|
+rice-brown|Brown rice, uncooked|brown rice|Rice, brown, long-grain, raw$|Rice, brown, long grain, unenriched, raw
+rice-brown-cooked|Brown rice, cooked|cooked brown rice|Rice, brown, long-grain, cooked$|
+rice-arborio|Short grain rice (arborio, sushi), uncooked|arborio rice,sushi rice,short grain rice,risotto rice|Rice, white, short-grain, raw, unenriched$|
+wild-rice|Wild rice, uncooked|wild rice|Wild rice, raw$|Wild rice, dry, raw
+pasta|Pasta, dry|pasta,spaghetti,penne,macaroni,fusilli,linguine,fettuccine,rigatoni,dry pasta|Pasta, dry, enriched$|Pasta, dry, enriched, spaghetti
+pasta-cooked|Pasta, cooked|cooked pasta,cooked spaghetti|Pasta, cooked, enriched, without added salt$|
+pasta-whole-wheat|Whole wheat pasta, dry|whole wheat pasta|Pasta, whole-wheat, dry$|Pasta, dry, whole grain, spaghetti
+egg-noodles|Egg noodles, dry|egg noodles|Noodles, egg, dry, enriched$|
+rice-noodles|Rice noodles, dry|rice noodles,rice vermicelli|Rice noodles, dry$|
+quinoa|Quinoa, uncooked|quinoa|Quinoa, uncooked$|
+quinoa-cooked|Quinoa, cooked|cooked quinoa|Quinoa, cooked$|
+couscous|Couscous, dry|couscous|Couscous, dry$|
+barley|Pearl barley|barley,pearl barley|Barley, pearled, raw$|
+bulgur|Bulgur, dry|bulgur,bulgur wheat|Bulgur, dry$|Bulgur, dry, raw
+farro|Farro, pearled, dry|farro|~Spelt, uncooked$|Farro, pearled, dry, raw
+millet|Millet|millet|Millet, raw$|Millet, whole grain
+buckwheat|Buckwheat groats|buckwheat,kasha|Buckwheat$|
+breadcrumbs|Breadcrumbs, dry|breadcrumbs,bread crumbs,dry breadcrumbs,panko|Bread, crumbs, dry, grated, plain$|
+bread-white|White bread|white bread,sandwich bread,bread|Bread, white, commercially prepared \(includes soft bread crumbs\)$|Bread, white, commercial
+bread-whole-wheat|Whole wheat bread|whole wheat bread,wholemeal bread|Bread, whole-wheat, commercially prepared$|Bread, 100% whole wheat, commercial
+bread-sourdough|French or sourdough bread|sourdough,sourdough bread,french bread,baguette|Bread, french or vienna \(includes sourdough\)$|
+pita|Pita bread, white|pita,pita bread|Bread, pita, white, enriched$|
+tortilla-flour|Flour tortilla|flour tortilla,flour tortillas,wheat tortilla|Tortillas, ready-to-bake or -fry, flour, refrigerated$|Tortilla, wheat flour, shelf stable
+tortilla-corn|Corn tortilla|corn tortilla,corn tortillas|Tortillas, ready-to-bake or -fry, corn$|Tortilla, corn, shelf stable
+baking-powder|Baking powder|baking powder|Leavening agents, baking powder, double-acting, sodium aluminum sulfate$|
+baking-soda|Baking soda|baking soda,bicarbonate of soda,bicarb|Leavening agents, baking soda$|
+yeast|Active dry yeast|yeast,active dry yeast,instant yeast,dry yeast|Leavening agents, yeast, baker's, active dry$|
+cream-of-tartar|Cream of tartar|cream of tartar|Leavening agents, cream of tartar$|
+graham-crackers|Graham crackers|graham crackers,graham cracker crumbs|Cookies, graham crackers, plain or honey \(includes cinnamon\)$|
+saltines|Saltine crackers|saltines,saltine crackers,soda crackers|Crackers, saltines \(includes oyster, soda, soup\)$|
+puff-pastry|Puff pastry, frozen|puff pastry|Puff pastry, frozen, ready-to-bake$|
+phyllo|Phyllo dough|phyllo,filo,phyllo dough|Phyllo dough$|
+pie-crust|Pie crust, refrigerated|pie crust,pie dough|Pie crust, refrigerated, regular, unbaked$|
+tapioca|Tapioca, pearl, dry|tapioca,tapioca pearls|Tapioca, pearl, dry$|
+# Spices, herbs, salt, extracts
+salt|Salt, table|salt,table salt,kosher salt,sea salt,fine salt|Salt, table$|Salt, table, iodized
+black-pepper|Black pepper, ground|pepper,black pepper,ground black pepper,ground pepper|Spices, pepper, black$|
+cinnamon|Cinnamon, ground|cinnamon,ground cinnamon|Spices, cinnamon, ground$|
+nutmeg|Nutmeg, ground|nutmeg,ground nutmeg|Spices, nutmeg, ground$|
+ginger-ground|Ginger, ground|ground ginger,ginger powder|Spices, ginger, ground$|
+cumin|Cumin|cumin,ground cumin,cumin seed|Spices, cumin seed$|
+paprika|Paprika|paprika,smoked paprika,sweet paprika|Spices, paprika$|
+chili-powder|Chili powder|chili powder,chile powder|Spices, chili powder$|
+cayenne|Cayenne pepper|cayenne,cayenne pepper,red pepper flakes,crushed red pepper,chili flakes|Spices, pepper, red or cayenne$|
+garlic-powder|Garlic powder|garlic powder,granulated garlic|Spices, garlic powder$|
+onion-powder|Onion powder|onion powder|Spices, onion powder$|
+oregano|Oregano, dried|oregano,dried oregano|Spices, oregano, dried$|
+basil-dried|Basil, dried|dried basil|Spices, basil, dried$|
+thyme-dried|Thyme, dried|dried thyme,thyme|Spices, thyme, dried$|
+rosemary-dried|Rosemary, dried|dried rosemary|Spices, rosemary, dried$|
+parsley-dried|Parsley, dried|dried parsley,parsley flakes|Spices, parsley, dried$|
+bay-leaf|Bay leaf|bay leaf,bay leaves|Spices, bay leaf$|
+turmeric|Turmeric, ground|turmeric,ground turmeric|Spices, turmeric, ground$|
+cloves|Cloves, ground|cloves,ground cloves|Spices, cloves, ground$|
+allspice|Allspice, ground|allspice|Spices, allspice, ground$|
+curry-powder|Curry powder|curry powder|Spices, curry powder$|
+coriander-seed|Coriander, ground|ground coriander,coriander seed|Spices, coriander seed$|
+dill-dried|Dill weed, dried|dried dill,dill weed|Spices, dill weed, dried$|
+mustard-seed|Mustard seed, ground|dry mustard,mustard powder,ground mustard,mustard seed|Spices, mustard seed, ground$|
+sage|Sage, ground|sage,ground sage,rubbed sage|Spices, sage, ground$|
+cardamom|Cardamom|cardamom,ground cardamom|Spices, cardamom$|
+fennel-seed|Fennel seed|fennel seed,fennel seeds|Spices, fennel seed$|
+poppy-seed|Poppy seed|poppy seed,poppy seeds|Spices, poppy seed$|
+celery-seed|Celery seed|celery seed|Spices, celery seed$|
+pumpkin-pie-spice|Pumpkin pie spice|pumpkin pie spice,pumpkin spice|Spices, pumpkin pie spice$|
+poultry-seasoning|Poultry seasoning|poultry seasoning|Spices, poultry seasoning$|
+vanilla-extract|Vanilla extract|vanilla,vanilla extract,pure vanilla extract|Vanilla extract$|
+basil-fresh|Basil, fresh|basil,fresh basil,basil leaves|Basil, fresh$|
+parsley-fresh|Parsley, fresh|parsley,fresh parsley,flat-leaf parsley,italian parsley|Parsley, fresh$|
+cilantro|Cilantro, fresh|cilantro,fresh cilantro,coriander leaves,fresh coriander|Coriander \(cilantro\) leaves, raw$|
+dill-fresh|Dill, fresh|fresh dill,dill|Dill weed, fresh$|
+mint|Mint, fresh|mint,fresh mint,spearmint,mint leaves|Spearmint, fresh$|
+rosemary-fresh|Rosemary, fresh|fresh rosemary,rosemary|Rosemary, fresh$|
+thyme-fresh|Thyme, fresh|fresh thyme|Thyme, fresh$|
+chives|Chives|chives,fresh chives|Chives, raw$|
+ginger|Ginger root, fresh|ginger,fresh ginger,ginger root,grated ginger|Ginger root, raw$|
+garlic|Garlic|garlic,garlic cloves,clove garlic,cloves garlic,minced garlic,garlic clove|Garlic, raw$|Garlic, raw
+# Condiments, sauces, broths, canned
+soy-sauce|Soy sauce|soy sauce,shoyu,tamari|Soy sauce made from soy and wheat \(shoyu\)$|
+vinegar|Vinegar, distilled white|vinegar,white vinegar,distilled vinegar|Vinegar, distilled$|
+cider-vinegar|Apple cider vinegar|apple cider vinegar,cider vinegar|Vinegar, cider$|
+balsamic|Balsamic vinegar|balsamic,balsamic vinegar|Vinegar, balsamic$|
+red-wine-vinegar|Red wine vinegar|red wine vinegar,wine vinegar|Vinegar, red wine$|
+ketchup|Ketchup|ketchup,catsup|Catsup$|
+mustard|Mustard, prepared yellow|mustard,yellow mustard,dijon mustard,dijon|Mustard, prepared, yellow$|Mustard, prepared, yellow
+worcestershire|Worcestershire sauce|worcestershire,worcestershire sauce|Sauce, worcestershire$|
+hot-sauce|Hot sauce|hot sauce,tabasco,sriracha,hot pepper sauce|Sauce, ready-to-serve, pepper or hot$|
+tomato-paste|Tomato paste|tomato paste|Tomato products, canned, paste, without salt added$|Tomato, paste, canned, without salt added
+tomato-sauce|Tomato sauce, canned|tomato sauce|Tomato products, canned, sauce$|Tomato, sauce, canned, with salt added
+tomato-puree|Tomato puree|tomato puree,passata|Tomato products, canned, puree, without salt added$|Tomato, puree, canned
+canned-tomatoes|Canned tomatoes|canned tomatoes,diced tomatoes,whole tomatoes,canned diced tomatoes,chopped tomatoes|Tomatoes, red, ripe, canned, packed in tomato juice$|Tomatoes, canned, red, ripe, diced
+crushed-tomatoes|Crushed tomatoes|crushed tomatoes|Tomatoes, crushed, canned$|Tomatoes, crushed, canned
+salsa|Salsa|salsa|Sauce, salsa, ready-to-serve$|Sauce, salsa, ready-to-serve
+marinara|Marinara (pasta sauce)|marinara,pasta sauce,spaghetti sauce,marinara sauce|Sauce, pasta, spaghetti/marinara, ready-to-serve$|Sauce, pasta, spaghetti/marinara, ready-to-serve
+chicken-broth|Chicken broth|chicken broth,chicken stock,stock,broth|Soup, chicken broth, ready-to-serve$|
+beef-broth|Beef broth|beef broth,beef stock|Soup, beef broth or bouillon canned, ready-to-serve$|
+vegetable-broth|Vegetable broth|vegetable broth,vegetable stock|Soup, vegetable broth, ready to serve$|
+fish-sauce|Fish sauce|fish sauce|Sauce, fish, ready-to-serve$|
+oyster-sauce|Oyster sauce|oyster sauce|Sauce, oyster, ready-to-serve$|
+hoisin|Hoisin sauce|hoisin,hoisin sauce|Sauce, hoisin, ready-to-serve$|
+bbq-sauce|Barbecue sauce|barbecue sauce,bbq sauce|Sauce, barbecue$|
+teriyaki|Teriyaki sauce|teriyaki,teriyaki sauce|Sauce, teriyaki, ready-to-serve$|
+peanut-butter|Peanut butter, smooth|peanut butter,creamy peanut butter,smooth peanut butter|Peanut butter, smooth style, with salt$|Peanut butter, creamy
+tahini|Tahini|tahini,sesame paste|Seeds, sesame butter, tahini, from roasted and toasted kernels \(most common type\)$|Sesame butter, creamy
+miso|Miso|miso,miso paste,white miso|Miso$|
+coconut-milk|Coconut milk, canned|coconut milk,canned coconut milk|Nuts, coconut milk, canned \(liquid expressed from grated meat and water\)$|
+coconut-cream|Coconut cream, canned|coconut cream|Nuts, coconut cream, canned, sweetened$|
+capers|Capers|capers|Capers, canned$|
+olives-black|Black olives|black olives,ripe olives,kalamata olives|Olives, ripe, canned \(small-extra large\)$|
+olives-green|Green olives|green olives|Olives, pickled, canned or bottled, green$|
+pickles|Dill pickles|pickles,dill pickles,gherkins|Pickles, cucumber, dill or kosher dill$|Pickles, cucumber, dill or kosher dill
+lemon-juice|Lemon juice|lemon juice,juice of lemon|Lemon juice, raw$|
+lime-juice|Lime juice|lime juice,juice of lime|Lime juice, raw$|
+orange-juice|Orange juice|orange juice|Orange juice, raw$|
+apple-juice|Apple juice|apple juice|Apple juice, canned or bottled, unsweetened, without added ascorbic acid$|
+ranch|Ranch dressing|ranch,ranch dressing|Salad dressing, ranch dressing, regular$|Dressing, Ranch
+italian-dressing|Italian dressing|italian dressing|Salad dressing, italian dressing, commercial, regular$|Salad dressing, Italian dressing, commercial, regular
+pesto|Pesto sauce|pesto|Sauce, pesto, ready-to-serve, refrigerated$|
+# Vegetables
+onion|Onion|onion,onions,yellow onion,white onion,chopped onion,diced onion|Onions, raw$|Onions, yellow, raw
+red-onion|Red onion|red onion|~Onions, raw$|Onions, red, raw
+green-onion|Green onion (scallion)|green onions,scallions,spring onions,scallion,green onion|Onions, spring or scallions \(includes tops and bulb\), raw$|Green onion, (scallion), bulb and greens, root removed, raw
+shallot|Shallot|shallot,shallots|Shallots, raw$|Shallots, bulb, peeled, root removed, raw
+carrot|Carrot|carrot,carrots|Carrots, raw$|Carrots, mature, raw
+celery|Celery|celery,celery stalk,celery stalks,celery ribs|Celery, raw$|Celery, raw
+potato|Potato|potato,potatoes|Potatoes, flesh and skin, raw$|
+potato-russet|Russet potato|russet potato,russet potatoes,baking potato|Potatoes, russet, flesh and skin, raw$|
+potato-red|Red potato|red potatoes,red potato|Potatoes, red, flesh and skin, raw$|
+potato-gold|Yukon gold potato|yukon gold potatoes,gold potatoes,yukon gold|Potatoes, white, flesh and skin, raw$|Potatoes, gold, without skin, raw
+sweet-potato|Sweet potato|sweet potato,sweet potatoes,yam|Sweet potato, raw, unprepared$|Sweet potatoes, orange flesh, without skin, raw
+tomato|Tomato|tomato,tomatoes,fresh tomatoes,cherry tomatoes,grape tomatoes,roma tomatoes|Tomatoes, red, ripe, raw, year round average$|
+red-bell-pepper|Red bell pepper|red bell pepper,red pepper,bell pepper,bell peppers|Peppers, sweet, red, raw$|Peppers, bell, red, raw
+green-bell-pepper|Green bell pepper|green bell pepper,green pepper|Peppers, sweet, green, raw$|Peppers, bell, green, raw
+yellow-bell-pepper|Yellow bell pepper|yellow bell pepper,yellow pepper,orange bell pepper|Peppers, sweet, yellow, raw$|Peppers, bell, yellow, raw
+jalapeno|Jalapeno pepper|jalapeno,jalapenos,jalapeno pepper|Peppers, jalapeno, raw$|
+poblano|Poblano pepper|poblano,poblano pepper|Peppers, hot chili, green, raw$|Peppers, poblano, seeded, raw
+broccoli|Broccoli|broccoli,broccoli florets|Broccoli, raw$|Broccoli, raw
+cauliflower|Cauliflower|cauliflower,cauliflower florets|Cauliflower, raw$|Cauliflower, raw
+spinach|Spinach, fresh|spinach,baby spinach,fresh spinach|Spinach, raw$|
+spinach-frozen|Spinach, frozen|frozen spinach|Spinach, frozen, chopped or leaf, unprepared$|
+kale|Kale|kale|Kale, raw$|Kale, raw
+romaine|Romaine lettuce|romaine,romaine lettuce,lettuce|Lettuce, cos or romaine, raw$|Lettuce, cos or romaine, raw
+iceberg|Iceberg lettuce|iceberg,iceberg lettuce|Lettuce, iceberg \(includes crisphead types\), raw$|Lettuce, iceberg, raw
+arugula|Arugula|arugula,rocket|Arugula, raw$|
+cabbage|Cabbage, green|cabbage,green cabbage|Cabbage, raw$|Cabbage, green, raw
+red-cabbage|Cabbage, red|red cabbage,purple cabbage|Cabbage, red, raw$|Cabbage, red, raw
+bok-choy|Bok choy|bok choy,pak choi,baby bok choy|Cabbage, chinese \(pak-choi\), raw$|Cabbage, bok choy, raw
+napa-cabbage|Napa cabbage|napa cabbage,chinese cabbage|~Cabbage, napa, cooked$|Cabbage, napa, leaf, destemmed, raw
+zucchini|Zucchini|zucchini,courgette,courgettes|Squash, summer, zucchini, includes skin, raw$|Squash, summer, green, zucchini, includes skin, raw
+yellow-squash|Yellow summer squash|yellow squash,summer squash|Squash, summer, crookneck and straightneck, raw$|Squash, summer, yellow, includes skin, raw
+butternut-squash|Butternut squash|butternut squash|Squash, winter, butternut, raw$|Squash, winter, butternut, raw
+acorn-squash|Acorn squash|acorn squash|Squash, winter, acorn, raw$|Squash, winter, acorn, raw
+spaghetti-squash|Spaghetti squash|spaghetti squash|Squash, winter, spaghetti, raw$|Squash, spaghetti, peeled, seeded, raw
+pumpkin-canned|Pumpkin puree, canned|pumpkin puree,canned pumpkin,pumpkin|Pumpkin, canned, without salt$|
+mushrooms|Mushrooms, white button|mushrooms,mushroom,white mushrooms,button mushrooms,sliced mushrooms|Mushrooms, white, raw$|Mushrooms, white button
+cremini|Cremini mushrooms|cremini,crimini,baby bella mushrooms|Mushrooms, brown, italian, or crimini, raw$|Mushroom, crimini
+portabella|Portabella mushrooms|portobello,portabella,portobello mushrooms|Mushrooms, portabella, raw$|Mushroom, portabella
+shiitake|Shiitake mushrooms|shiitake,shiitake mushrooms|Mushrooms, shiitake, raw$|Mushrooms, shiitake
+cucumber|Cucumber|cucumber,cucumbers|Cucumber, with peel, raw$|Cucumber, with peel, raw
+eggplant|Eggplant|eggplant,aubergine|Eggplant, raw$|Eggplant, raw
+asparagus|Asparagus|asparagus|Asparagus, raw$|Asparagus, green, raw
+green-beans|Green beans|green beans,string beans,snap beans|Beans, snap, green, raw$|Beans, snap, green, raw
+peas-frozen|Green peas, frozen|peas,frozen peas,green peas|Peas, green, frozen, unprepared$|
+corn|Sweet corn kernels|corn,sweet corn,corn kernels|Corn, sweet, yellow, raw$|
+corn-frozen|Corn, frozen|frozen corn|Corn, sweet, yellow, frozen, kernels cut off cob, unprepared$|
+brussels-sprouts|Brussels sprouts|brussels sprouts|Brussels sprouts, raw$|Brussels sprouts, raw
+leek|Leek|leek,leeks|Leeks, \(bulb and lower leaf-portion\), raw$|Leeks, bulb and greens, root removed, raw
+beet|Beet|beet,beets,beetroot|Beets, raw$|Beets, raw
+radish|Radish|radish,radishes|Radishes, raw$|Radishes, red, raw
+avocado|Avocado|avocado,avocados,hass avocado|Avocados, raw, California$|Avocado, Hass, peeled, raw
+parsnip|Parsnip|parsnip,parsnips|Parsnips, raw$|Parsnips, raw
+turnip|Turnip|turnip,turnips|Turnips, raw$|Turnips, raw
+fennel|Fennel bulb|fennel,fennel bulb|Fennel, bulb, raw$|Fennel, bulb, raw
+okra|Okra|okra|Okra, raw$|
+bean-sprouts|Bean sprouts|bean sprouts,mung bean sprouts|Mung beans, mature seeds, sprouted, raw$|
+water-chestnuts|Water chestnuts, canned|water chestnuts|Waterchestnuts, chinese, canned, solids and liquids$|
+sun-dried-tomatoes|Sun-dried tomatoes|sun-dried tomatoes,sundried tomatoes|Tomatoes, sun-dried$|
+mixed-vegetables|Mixed vegetables, frozen|mixed vegetables,frozen mixed vegetables|Vegetables, mixed, frozen, unprepared$|
+collards|Collard greens|collards,collard greens|Collards, raw$|Collards, raw
+chard|Swiss chard|swiss chard,chard|Chard, swiss, raw$|
+artichoke-hearts|Artichoke hearts, frozen|artichoke hearts,artichokes|Artichokes, \(globe or french\), frozen, unprepared$|
+tomatillo|Tomatillos|tomatillos,tomatillo|Tomatillos, raw$|Tomatillos, dehusked, raw
+plantain|Plantain|plantain,plantains|Plantains, yellow, raw$|Plantains, ripe, raw
+# Fruits
+apple|Apple|apple,apples|Apples, raw, with skin$|Apples, gala, with skin, raw
+banana|Banana|banana,bananas,ripe bananas,mashed banana|Bananas, raw$|Bananas, ripe and slightly ripe, raw
+lemon|Lemon|lemon,lemons|Lemons, raw, without peel$|
+lime|Lime|lime,limes|Limes, raw$|
+orange|Orange|orange,oranges,navel orange|Oranges, raw, all commercial varieties$|Oranges, raw, navels
+strawberries|Strawberries|strawberries,strawberry|Strawberries, raw$|Strawberries, raw
+blueberries|Blueberries|blueberries,blueberry|Blueberries, raw$|Blueberries, raw
+raspberries|Raspberries|raspberries|Raspberries, raw$|Raspberries, raw
+blackberries|Blackberries|blackberries|Blackberries, raw$|Blackberries, raw
+cranberries|Cranberries, fresh|cranberries,fresh cranberries|Cranberries, raw$|
+dried-cranberries|Dried cranberries, sweetened|dried cranberries,craisins|Cranberries, dried, sweetened$|Cranberries, dried, sweetened
+raisins|Raisins|raisins|Raisins, dark, seedless$|Raisins, dark, seedless
+dates|Dates, medjool|dates,medjool dates|Dates, medjool$|
+peach|Peach|peach,peaches|Peaches, yellow, raw$|Peaches, yellow, raw
+pear|Pear|pear,pears|Pears, raw$|Pears, raw, bartlett
+pineapple|Pineapple|pineapple,pineapple chunks|Pineapple, raw, all varieties$|Pineapple, raw
+mango|Mango|mango,mangoes|Mangos, raw$|
+grapes|Grapes|grapes,red grapes,green grapes|Grapes, red or green \(European type, such as Thompson seedless\), raw$|
+cherries|Cherries, sweet|cherries|Cherries, sweet, raw$|Cherries, sweet, dark red, raw
+watermelon|Watermelon|watermelon|Watermelon, raw$|Watermelon, seedless, flesh only, raw
+cantaloupe|Cantaloupe|cantaloupe,melon|Melons, cantaloupe, raw$|Melons, cantaloupe, raw
+kiwi|Kiwifruit|kiwi,kiwifruit|Kiwifruit, green, raw$|Kiwifruit, green, raw
+coconut-sweetened|Shredded coconut, sweetened|shredded coconut,sweetened coconut,coconut flakes|Nuts, coconut meat, dried \(desiccated\), sweetened, shredded$|
+coconut-unsweetened|Desiccated coconut, unsweetened|unsweetened coconut,desiccated coconut|Nuts, coconut meat, dried \(desiccated\), not sweetened$|
+applesauce|Applesauce, unsweetened|applesauce,apple sauce,unsweetened applesauce|Applesauce, canned, unsweetened, without added ascorbic acid$|
+lemon-zest|Lemon zest|lemon zest,lemon peel,grated lemon peel|Lemon peel, raw$|
+orange-zest|Orange zest|orange zest,orange peel|Orange peel, raw$|
+dried-apricots|Dried apricots|dried apricots|Apricots, dried, sulfured, uncooked$|
+plum|Plum|plum,plums|Plums, raw$|
+prunes|Prunes|prunes,dried plums|Plums, dried \(prunes\), uncooked$|Plums, dried (prunes), uncooked
+figs-dried|Dried figs|dried figs,figs|Figs, dried, uncooked$|Figs, dried, uncooked
+pomegranate|Pomegranate seeds|pomegranate,pomegranate seeds,pomegranate arils|Pomegranates, raw$|
+rhubarb|Rhubarb|rhubarb|Rhubarb, raw$|
+grapefruit|Grapefruit|grapefruit|Grapefruit, raw, pink and red and white, all areas$|
+apricot|Apricot|apricot,apricots|Apricots, raw$|
+nectarine|Nectarine|nectarine,nectarines|Nectarines, raw$|Nectarines, raw
+# Nuts and seeds
+almonds|Almonds|almonds,whole almonds,sliced almonds,slivered almonds|Nuts, almonds$|Nuts, almonds, whole, raw
+walnuts|Walnuts|walnuts,chopped walnuts|Nuts, walnuts, english$|
+pecans|Pecans|pecans,chopped pecans,pecan halves|Nuts, pecans$|Nuts, pecans, halves, raw
+cashews|Cashews|cashews,cashew nuts|Nuts, cashew nuts, raw$|Nuts, cashew nuts, raw
+peanuts|Peanuts|peanuts|Peanuts, all types, raw$|Peanuts, raw
+pistachios|Pistachios|pistachios|Nuts, pistachio nuts, raw$|Nuts, pistachio nuts, raw
+hazelnuts|Hazelnuts|hazelnuts,filberts|Nuts, hazelnuts or filberts$|Nuts, hazelnuts or filberts, raw
+macadamia|Macadamia nuts|macadamia,macadamia nuts|Nuts, macadamia nuts, raw$|Nuts, macadamia nuts, raw
+pine-nuts|Pine nuts|pine nuts,pignoli|Nuts, pine nuts, dried$|Nuts, pine nuts, raw
+sunflower-seeds|Sunflower seeds|sunflower seeds|Seeds, sunflower seed kernels, dried$|Seeds, sunflower seed, kernel, raw
+pumpkin-seeds|Pumpkin seeds (pepitas)|pumpkin seeds,pepitas|Seeds, pumpkin and squash seed kernels, dried$|Seeds, pumpkin seeds (pepitas), raw
+sesame-seeds|Sesame seeds|sesame seeds|Seeds, sesame seeds, whole, dried$|
+chia|Chia seeds|chia,chia seeds|Seeds, chia seeds, dried$|Chia seeds, dry, raw
+flaxseed|Flaxseed|flaxseed,flax seeds,ground flaxseed,flax meal|Seeds, flaxseed$|Flaxseed, ground
+almond-butter|Almond butter|almond butter|Nuts, almond butter, plain, without salt added$|Almond butter, creamy
+almond-milk|Almond milk, unsweetened|almond milk|Beverages, almond milk, unsweetened, shelf stable$|Almond milk, unsweetened, plain, shelf stable
+soy-milk|Soy milk, unsweetened|soy milk,soymilk|Soymilk, original and vanilla, unfortified$|Soy milk, unsweetened, plain, shelf stable
+oat-milk|Oat milk, unsweetened|oat milk|~Beverages, almond milk, unsweetened, shelf stable$|Oat milk, unsweetened, plain, refrigerated
+# Legumes and soy
+black-beans|Black beans, cooked|black beans,cooked black beans|Beans, black, mature seeds, cooked, boiled, without salt$|
+black-beans-canned|Black beans, canned, drained|canned black beans|Beans, black turtle, mature seeds, canned$|Beans, black, canned, sodium added, drained and rinsed
+black-beans-dry|Black beans, dry|dried black beans,dry black beans|Beans, black, mature seeds, raw$|
+kidney-beans|Kidney beans, canned|kidney beans,red kidney beans,canned kidney beans|Beans, kidney, red, mature seeds, canned, solids and liquids$|Beans, kidney, dark red, canned, sodium added, sugar added, drained and rinsed
+pinto-beans|Pinto beans, cooked|pinto beans|Beans, pinto, mature seeds, cooked, boiled, without salt$|
+pinto-beans-canned|Pinto beans, canned, drained|canned pinto beans|Beans, pinto, canned, drained solids$|Beans, pinto, canned, sodium added, drained and rinsed
+navy-beans|Navy beans, cooked|navy beans,white beans|Beans, navy, mature seeds, cooked, boiled, without salt$|
+cannellini|Cannellini beans, canned, drained|cannellini,cannellini beans,great northern beans|Beans, great northern, mature seeds, canned$|Beans, cannellini, canned, sodium added, drained and rinsed
+chickpeas-canned|Chickpeas, canned, drained|chickpeas,garbanzo beans,canned chickpeas|Chickpeas \(garbanzo beans, bengal gram\), mature seeds, canned, drained solids$|Chickpeas (garbanzo beans, bengal gram), canned, sodium added, drained and rinsed
+chickpeas-cooked|Chickpeas, cooked|cooked chickpeas|Chickpeas \(garbanzo beans, bengal gram\), mature seeds, cooked, boiled, without salt$|
+chickpeas-dry|Chickpeas, dry|dried chickpeas,dry chickpeas|Chickpeas \(garbanzo beans, bengal gram\), mature seeds, raw$|
+lentils|Lentils, dry|lentils,dry lentils,red lentils,green lentils,brown lentils|Lentils, raw$|Lentils, dry
+lentils-cooked|Lentils, cooked|cooked lentils|Lentils, mature seeds, cooked, boiled, without salt$|
+split-peas|Split peas, cooked|split peas,cooked split peas|Peas, split, mature seeds, cooked, boiled, without salt$|
+refried-beans|Refried beans, canned|refried beans|Refried beans, canned, traditional style$|Refried beans, canned (pinto)
+baked-beans|Baked beans, canned|baked beans|Beans, baked, canned, plain or vegetarian$|Beans, baked, canned, vegetarian
+tofu-firm|Tofu, firm|tofu,firm tofu,extra firm tofu|Tofu, firm, prepared with calcium sulfate and magnesium chloride \(nigari\)$|
+tofu-soft|Tofu, soft or silken|soft tofu,silken tofu|Tofu, soft, prepared with calcium sulfate and magnesium chloride \(nigari\)$|
+edamame|Edamame, frozen|edamame|Edamame, frozen, unprepared$|
+tempeh|Tempeh|tempeh|Tempeh$|
+hummus|Hummus|hummus|Hummus, commercial$|Hummus, commercial
+# Meat and poultry
+chicken-breast|Chicken breast, boneless skinless, raw|chicken breast,chicken breasts,boneless skinless chicken breast,chicken|Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw$|Chicken, breast, boneless, skinless, raw
+chicken-thigh|Chicken thigh, boneless skinless, raw|chicken thighs,boneless chicken thighs,chicken thigh|Chicken, broilers or fryers, dark meat, thigh, meat only, raw$|Chicken, thigh, boneless, skinless, raw
+chicken-thigh-skin|Chicken thigh, with skin, raw|bone-in chicken thighs,skin-on chicken thighs|Chicken, broilers or fryers, thigh, meat and skin, raw$|Chicken, thigh, meat and skin, raw
+chicken-drumstick|Chicken drumstick, with skin, raw|chicken drumsticks,drumsticks|Chicken, broilers or fryers, drumstick, meat and skin, raw$|Chicken, drumstick, meat and skin, raw
+chicken-wing|Chicken wing, with skin, raw|chicken wings,wings|Chicken, broilers or fryers, wing, meat and skin, raw$|Chicken, wing, meat and skin, raw
+chicken-whole|Whole chicken, meat and skin, raw|whole chicken|Chicken, broilers or fryers, meat and skin, raw$|
+chicken-cooked|Chicken breast, cooked, roasted|cooked chicken,shredded chicken,rotisserie chicken,cooked chicken breast|Chicken, broilers or fryers, breast, meat only, cooked, roasted$|
+chicken-ground|Ground chicken, raw|ground chicken|Chicken, ground, raw$|Chicken, ground, with additives, raw
+turkey-ground|Ground turkey, 93% lean, raw|ground turkey|Turkey, Ground, raw$|Turkey, ground, 93% lean/ 7% fat, raw
+turkey-breast|Turkey breast, raw|turkey breast,turkey|Turkey, whole, breast, meat only, raw$|
+beef-ground-80|Ground beef, 80% lean, raw|ground beef,80/20 ground beef,minced beef,hamburger|Beef, ground, 80% lean meat / 20% fat, raw$|Beef, ground, 80% lean meat / 20% fat, raw
+beef-ground-85|Ground beef, 85% lean, raw|85/15 ground beef,85% lean ground beef|Beef, ground, 85% lean meat / 15% fat, raw$|
+beef-ground-90|Ground beef, 90% lean, raw|90/10 ground beef,lean ground beef,90% lean ground beef|Beef, ground, 90% lean meat / 10% fat, raw$|Beef, ground, 90% lean meat / 10% fat, raw
+beef-ground-93|Ground beef, 93% lean, raw|93/7 ground beef,extra lean ground beef|Beef, ground, 93% lean meat / 7% fat, raw$|
+beef-chuck|Beef chuck roast, raw|chuck roast,beef chuck,stew beef,beef stew meat,pot roast|Beef, chuck, arm pot roast, separable lean and fat, trimmed to 1/8" fat, all grades, raw$|Beef, chuck, roast, boneless, choice, raw
+beef-sirloin|Top sirloin steak, raw|sirloin,sirloin steak,steak|Beef, top sirloin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw$|Beef, top sirloin steak, raw
+beef-ribeye|Ribeye steak, raw|ribeye,rib eye,ribeye steak|Beef, rib, eye, small end \(ribs 10-12\), separable lean and fat, trimmed to 0" fat, choice, raw$|Beef, ribeye, steak, boneless, choice, raw
+beef-flank|Flank steak, raw|flank steak|Beef, flank, steak, separable lean and fat, trimmed to 0" fat, all grades, raw$|Beef, flank, steak, boneless, choice, raw
+beef-tenderloin|Beef tenderloin, raw|beef tenderloin,filet mignon|Beef, tenderloin, steak, separable lean and fat, trimmed to 1/8" fat, select, raw$|
+beef-strip|New York strip steak, raw|ny strip,strip steak,new york strip|Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8" fat, all grades, raw$|Beef, short loin (NY strip steak), raw
+beef-brisket|Beef brisket, raw|brisket,beef brisket|Beef, brisket, flat half, separable lean and fat, trimmed to 1/8" fat, all grades, raw$|
+pork-chop|Pork chop, center cut, raw|pork chop,pork chops|Pork, fresh, loin, center loin \(chops\), bone-in, separable lean and fat, raw$|Pork, chop, center cut, raw
+pork-tenderloin|Pork tenderloin, raw|pork tenderloin|Pork, fresh, loin, tenderloin, separable lean only, raw$|Pork, loin, tenderloin, boneless, raw
+pork-loin|Pork loin, boneless, raw|pork loin,pork roast|Pork, fresh, loin, whole, separable lean and fat, raw$|Pork, loin, boneless, raw
+pork-ground|Ground pork, raw|ground pork,minced pork|Pork, fresh, ground, raw$|Pork, ground, raw
+pork-shoulder|Pork shoulder, raw|pork shoulder,pork butt,boston butt,pulled pork|Pork, fresh, shoulder, whole, separable lean and fat, raw$|
+pork-belly|Pork belly, raw|pork belly|Pork, fresh, belly, raw$|Pork, belly, with skin, raw
+bacon|Bacon, raw|bacon,bacon slices,uncooked bacon|Pork, cured, bacon, unprepared$|
+bacon-cooked|Bacon, cooked|cooked bacon,crumbled bacon,bacon bits|Pork, cured, bacon, pre-sliced, cooked, pan-fried$|
+ham|Ham, sliced|ham,deli ham,diced ham,cooked ham|Ham, sliced, regular \(approximately 11% fat\)$|
+prosciutto|Prosciutto (cured ham)|prosciutto|Pork, cured, ham, whole, separable lean and fat, unheated$|
+italian-sausage|Italian sausage, pork, raw|italian sausage,sausage|Sausage, Italian, pork, mild, raw$|
+breakfast-sausage|Pork breakfast sausage, raw|breakfast sausage,pork sausage|Pork sausage, link/patty, unprepared$|
+chorizo|Chorizo|chorizo|Sausage, pork, chorizo, link or ground, raw$|
+pepperoni|Pepperoni|pepperoni|Pepperoni, beef and pork, sliced$|Pepperoni, beef and pork, sliced
+salami|Salami, hard|salami|Salami, dry or hard, pork$|Salami, hard, sliced
+hot-dog|Hot dog (frankfurter), beef|hot dog,hot dogs,frankfurter|Frankfurter, beef, unheated$|Frankfurter, beef, unheated
+lamb-ground|Ground lamb, raw|ground lamb,lamb|Lamb, ground, raw$|Lamb, ground, raw
+lamb-leg|Lamb leg, raw|leg of lamb,lamb leg|Lamb, leg, whole \(shank and sirloin\), separable lean and fat, trimmed to 1/4" fat, choice, raw$|
+bison|Ground bison, raw|bison,ground bison|Game meat , bison, ground, raw$|Bison, ground, raw
+# Fish and seafood
+salmon|Salmon, Atlantic, farmed, raw|salmon,salmon fillet,salmon fillets|Fish, salmon, Atlantic, farmed, raw$|Fish, salmon, Atlantic, farm raised, raw
+salmon-sockeye|Salmon, sockeye, raw|sockeye salmon,wild salmon|Fish, salmon, sockeye, raw$|Fish, salmon, sockeye, wild caught, raw
+smoked-salmon|Smoked salmon|smoked salmon,lox|Fish, salmon, chinook, smoked$|
+cod|Cod, raw|cod,cod fillet,white fish|Fish, cod, Atlantic, raw$|Fish, cod, Atlantic, wild caught, raw
+tilapia|Tilapia, raw|tilapia|Fish, tilapia, raw$|Fish, tilapia, farm raised, raw
+halibut|Halibut, raw|halibut|Fish, halibut, Atlantic and Pacific, raw$|
+tuna-canned|Tuna, light, canned in water, drained|tuna,canned tuna,tuna in water|Fish, tuna, light, canned in water, drained solids$|Fish, tuna, light, canned in water, drained solids
+tuna-fresh|Tuna, yellowfin, raw|ahi tuna,yellowfin tuna,tuna steak|Fish, tuna, fresh, yellowfin, raw$|Tuna, ahi or yellowfin, frozen, wild caught
+shrimp|Shrimp, raw|shrimp,prawns,raw shrimp|Crustaceans, shrimp, raw$|Crustaceans, shrimp, farm raised, raw
+scallops|Scallops, raw|scallops,sea scallops|Mollusks, scallop, mixed species, raw$|Scallops, sea, frozen, wild caught
+crab|Crab meat, blue|crab,crab meat,lump crab|Crustaceans, crab, blue, raw$|Crustaceans, crab, blue swimming, lump, pasteurized, refrigerated
+lobster|Lobster, raw|lobster,lobster tail|Crustaceans, lobster, northern, raw$|
+mussels|Mussels, raw|mussels|Mollusks, mussel, blue, raw$|
+clams|Clams, raw|clams|Mollusks, clam, mixed species, raw$|
+squid|Squid (calamari), raw|squid,calamari|Mollusks, squid, mixed species, raw$|Squid (calamari), frozen, tubes only
+anchovies|Anchovies, canned in oil|anchovies,anchovy fillets|Fish, anchovy, european, canned in oil, drained solids$|Anchovies, canned in olive oil, with salt, drained
+sardines|Sardines, canned in oil|sardines|Fish, sardine, Atlantic, canned in oil, drained solids with bone$|
+catfish|Catfish, raw|catfish|Fish, catfish, channel, farmed, raw$|Fish, catfish, farm raised, raw
+trout|Trout, rainbow, raw|trout,rainbow trout|Fish, trout, rainbow, farmed, raw$|
+pollock|Pollock, raw|pollock|Fish, pollock, Atlantic, raw$|Fish, pollock, raw
+haddock|Haddock, raw|haddock|Fish, haddock, raw$|Fish, haddock, raw
+swordfish|Swordfish, raw|swordfish|Fish, swordfish, raw$|Swordfish, frozen, wild caught
+# Beverages and alcohol used in cooking
+water|Water|water,tap water,cold water,warm water,boiling water,hot water,ice water|Beverages, water, tap, drinking$|
+red-wine|Red wine|red wine,dry red wine|Alcoholic beverage, wine, table, red$|
+white-wine|White wine|white wine,dry white wine|Alcoholic beverage, wine, table, white$|
+beer|Beer|beer,lager|Alcoholic beverage, beer, regular, all$|
+coffee|Coffee, brewed|coffee,brewed coffee,strong coffee|Beverages, coffee, brewed, prepared with tap water$|
+espresso|Espresso|espresso|Beverages, coffee, brewed, espresso, restaurant-prepared$|
+

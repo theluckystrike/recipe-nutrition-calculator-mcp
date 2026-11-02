@@ -1,0 +1,270 @@
+[
+ {
+  "name": "flour per 100 g from SR Legacy 168894",
+  "tool": "lookup_ingredient_nutrition",
+  "input": {
+   "ingredient": "all-purpose flour"
+  },
+  "expect": {
+   "food.fdc_id": 168894,
+   "food.per_100g.kcal": 364.0,
+   "food.per_100g.protein_g": 10.33,
+   "food.per_100g.carbs_g": 76.31
+  }
+ },
+ {
+  "name": "salted butter per 100 g, SR Legacy 173410",
+  "tool": "lookup_ingredient_nutrition",
+  "input": {
+   "ingredient": "butter"
+  },
+  "expect": {
+   "food.fdc_id": 173410,
+   "food.per_100g.fat_g": 81.11,
+   "food.per_100g.sodium_mg": 643.0,
+   "food.per_100g.sat_fat_g": 51.368
+  }
+ },
+ {
+  "name": "large egg is a Foundation food 748967",
+  "tool": "lookup_ingredient_nutrition",
+  "input": {
+   "ingredient": "egg"
+  },
+  "expect": {
+   "food.fdc_id": 748967,
+   "food.per_100g.protein_g": 12.4,
+   "food.per_100g.kcal": 148.0
+  }
+ },
+ {
+  "name": "1 cup brown sugar is the USDA packed cup, 220 g",
+  "tool": "lookup_ingredient_nutrition",
+  "input": {
+   "ingredient": "brown sugar",
+   "amount": 1,
+   "unit": "cup"
+  },
+  "expect": {
+   "for_amount.grams": 220.0,
+   "for_amount.nutrients.kcal": 836.0
+  }
+ },
+ {
+  "name": "3 large eggs weigh 150 g (USDA large = 50 g)",
+  "tool": "lookup_ingredient_nutrition",
+  "input": {
+   "ingredient": "egg",
+   "amount": 3,
+   "unit": "each"
+  },
+  "expect": {
+   "for_amount.grams": 150.0
+  }
+ },
+ {
+  "name": "100 g sugar",
+  "tool": "calculate_recipe_nutrition",
+  "input": {
+   "lines": [
+    "100 g granulated sugar"
+   ]
+  },
+  "expect": {
+   "total.kcal": 387.0,
+   "total.carbs_g": 100.0,
+   "total_weight_g": 100
+  }
+ },
+ {
+  "name": "1 cup whole milk = USDA cup weight",
+  "tool": "calculate_recipe_nutrition",
+  "input": {
+   "lines": [
+    "1 cup whole milk"
+   ]
+  },
+  "expect": {
+   "total_weight_g": 244.0,
+   "total.kcal": 148.8,
+   "total.protein_g": 7.7
+  }
+ },
+ {
+  "name": "three-line dough, totals and per serving",
+  "tool": "calculate_recipe_nutrition",
+  "input": {
+   "lines": [
+    "2 cups all-purpose flour",
+    "1 cup sugar",
+    "1/2 cup butter"
+   ],
+   "servings": 4
+  },
+  "expect": {
+   "total_weight_g": 563.5,
+   "total.kcal": 2497.8,
+   "per_serving.kcal": 624.4,
+   "total.fat_g": 94.5
+  }
+ },
+ {
+  "name": "1 stick butter = 1/4 lb",
+  "tool": "calculate_recipe_nutrition",
+  "input": {
+   "lines": [
+    "1 stick butter"
+   ]
+  },
+  "expect": {
+   "total_weight_g": 113.4
+  }
+ },
+ {
+  "name": "1 (15 oz) can uses the net weight",
+  "tool": "calculate_recipe_nutrition",
+  "input": {
+   "lines": [
+    "1 (15 oz) can kidney beans"
+   ]
+  },
+  "expect": {
+   "total_weight_g": 425.2
+  }
+ },
+ {
+  "name": "2 medium bananas use the USDA medium weight",
+  "tool": "calculate_recipe_nutrition",
+  "input": {
+   "lines": [
+    "2 medium bananas"
+   ]
+  },
+  "expect": {
+   "total_weight_g": 236.0
+  }
+ },
+ {
+  "name": "1 cup chopped onion uses the chopped cup",
+  "tool": "calculate_recipe_nutrition",
+  "input": {
+   "lines": [
+    "1 cup chopped onion"
+   ]
+  },
+  "expect": {
+   "total_weight_g": 160.0
+  }
+ },
+ {
+  "name": "calories 47 -> 45 (nearest 5 up to 50)",
+  "tool": "round_nutrition_label",
+  "input": {
+   "kcal": 47,
+   "fat_g": 4.3,
+   "sodium_mg": 137,
+   "carbs_g": 0.7,
+   "protein_g": 0.3
+  },
+  "expect": {
+   "label.calories.declared": 45,
+   "label.total_fat.declared": 4.5,
+   "label.sodium.declared": 135,
+   "label.total_carbohydrate.text": "less than 1g",
+   "label.protein.declared": 0
+  }
+ },
+ {
+  "name": "calories 52 -> 50, fat 5.6 -> 6, sodium 143 -> 140",
+  "tool": "round_nutrition_label",
+  "input": {
+   "kcal": 52,
+   "fat_g": 5.6,
+   "sat_fat_g": 0.4,
+   "sodium_mg": 143
+  },
+  "expect": {
+   "label.calories.declared": 50,
+   "label.total_fat.declared": 6,
+   "label.saturated_fat.declared": 0,
+   "label.sodium.declared": 140
+  }
+ },
+ {
+  "name": "calories under 5 are 0, sodium under 5 is 0",
+  "tool": "round_nutrition_label",
+  "input": {
+   "kcal": 4.9,
+   "sodium_mg": 4.9,
+   "fat_g": 0.49
+  },
+  "expect": {
+   "label.calories.declared": 0,
+   "label.sodium.declared": 0,
+   "label.total_fat.declared": 0
+  }
+ },
+ {
+  "name": "percent DV from the 2,000 kcal DRVs",
+  "tool": "round_nutrition_label",
+  "input": {
+   "kcal": 250,
+   "fat_g": 39,
+   "sat_fat_g": 5,
+   "sodium_mg": 460,
+   "carbs_g": 55,
+   "fiber_g": 7,
+   "added_sugars_g": 10
+  },
+  "expect": {
+   "label.total_fat.percent_dv": 50,
+   "label.saturated_fat.percent_dv": 25,
+   "label.sodium.percent_dv": 20,
+   "label.total_carbohydrate.percent_dv": 20,
+   "label.dietary_fiber.percent_dv": 25,
+   "label.added_sugars.percent_dv": 20
+  }
+ },
+ {
+  "name": "calories 134.9 -> 130 (nearest 10 above 50)",
+  "tool": "round_nutrition_label",
+  "input": {
+   "kcal": 134.9
+  },
+  "expect": {
+   "label.calories.declared": 130
+  }
+ },
+ {
+  "name": "double 1 cup sugar",
+  "tool": "scale_recipe_nutrition",
+  "input": {
+   "lines": [
+    "1 cup sugar"
+   ],
+   "factor": 2
+  },
+  "expect": {
+   "scaled_lines.0.scaled": "2 cup sugar",
+   "total_after.kcal": 1548.0
+  }
+ },
+ {
+  "name": "4 to 6 servings: 2 large eggs -> 3 large eggs",
+  "tool": "scale_recipe_nutrition",
+  "input": {
+   "lines": [
+    "2 large eggs",
+    "1 1/2 cups whole milk"
+   ],
+   "original_servings": 4,
+   "target_servings": 6
+  },
+  "expect": {
+   "scaled_lines.0.scaled": "3 large eggs",
+   "scaled_lines.1.scaled": "2 1/4 cups whole milk",
+   "factor": 1.5,
+   "servings": 6
+  }
+ }
+]

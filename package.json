@@ -1,0 +1,32 @@
+{
+  "name": "recipe-nutrition-calculator-mcp",
+  "version": "1.0.0",
+  "description": "Recipe nutrition calculator MCP server: USDA FoodData Central nutrients for 398 recipe ingredients, per-serving totals, FDA Nutrition Facts label rounding and recipe scaling.",
+  "type": "module",
+  "license": "MIT",
+  "author": "theluckystrike",
+  "mcpName": "io.github.theluckystrike/recipe-nutrition-calculator-mcp",
+  "bin": {
+    "recipe-nutrition-calculator-mcp": "dist/stdio.js"
+  },
+  "main": "dist/core.js",
+  "files": ["dist", "README.md", "LICENSE", "DATA_SOURCES.md"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && chmod +x dist/stdio.js",
+    "test": "node --test",
+    "data": "python3 -I scripts/gen_data_ts.py data/foods.json src/data.ts",
+    "deploy": "wrangler deploy"
+  },
+  "repository": { "type": "git", "url": "git+https://github.com/theluckystrike/recipe-nutrition-calculator-mcp.git" },
+  "homepage": "https://recipetool.net/nutrition-calculator",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "claude", "recipe-nutrition", "nutrition-calculator", "calorie-calculator", "usda", "fooddata-central", "nutrition-facts-label", "recipe-scaling", "macros"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "typescript": "^5.9.3"
+  }
+}
